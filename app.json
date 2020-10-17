@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ecohunt2",
-    "slug": "ecohunt2",
+    "name": "ecohunt",
+    "slug": "ecohunt",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

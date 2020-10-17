@@ -1,15 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import Constants from 'expo-constants';
+import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MapContainer from './containers/MapContainer'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.titleText}>ecohunt</Text>
-      <Text style={styles.subtitleText}>minimize overfishing and overhunting</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <MapContainer />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -19,6 +20,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#aad2ba',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Constants.statusBarHeight
   },
   titleText: {
     fontSize: 80,

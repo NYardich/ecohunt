@@ -2,13 +2,20 @@ import Constants from 'expo-constants';
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MapContainer from './containers/MapContainer'
+import Camera from './components/Camera';
+import {SafeAreaView} from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <MapContainer />
-      </View>
+      // <View style={styles.container}>
+      //   <MapContainer />
+      // </View>
+      <>‍
+      <SafeAreaView styles={{flex:1}}>‍
+        <Camera />‍
+      </SafeAreaView>‍
+    </>
     );
   }
 }
